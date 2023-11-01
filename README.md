@@ -2,7 +2,7 @@
 
 Max에서 jweb을 통해 P5js 코드를 별도의 변환없이 Max와 상호작용 할 수 있다
 
-## jweb
+## jweb 네임스페이스 문제
 
 jweb 오브젝트는 크로스 플랫폼 CEF(Chromium Embedded Framework)를 사용하여 Max내부에서 웹파일을 렌더링 한다
 
@@ -12,7 +12,7 @@ jweb 오브젝트는 크로스 플랫폼 CEF(Chromium Embedded Framework)를 사
 (인스턴스 모드에 대한 자세한 설명은 https://github.com/processing/p5.js/wiki/Global-and-instance-mode 참고)
 
 근데 이렇게 하면 진짜 귀찮다... 
-한줄한줄 수정해하하고 클래스 파일 관리에 문제가 생긴다
+한줄 한줄 수정해야하고 별도의 클래스파일로 나눠 사용할 수 없다
 
 ## 솔루션
 
@@ -20,7 +20,15 @@ P5js 코드를 일일히 수정하는 대신 Max API 함수를 html단에서 비
 
 이 방식을 사용하면 sketch.js 파일을 그대로 Max에서 실행시키고 P5js라이브러리 문법을 사용해 수정 할 수 있다
 
-## 템플릿 패치 설명
+## 템플릿 패치 사용법
 
 ![image](https://github.com/0seconds-ago/MaxP5jsTemplate/assets/123317581/76a77602-7ece-4f2c-933a-a764798ea264)
 
+* 렌더모드 
+$1 Onscreen 사용시 언락모드에서 렌더링 되지 않는다
+투명한 배경을 설정하려면 background()대신 clear()사용, rendermode $2
+
+* readfile
+상단의 readfile로 로컬 html파일을 선택할 수 있다.
+
+* inlet, outlet
