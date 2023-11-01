@@ -26,7 +26,8 @@ P5js 코드를 일일히 수정하는 대신 Max API 함수를 html단에서 비
 
 * 렌더모드 
 $1 Onscreen 사용시 언락모드에서 렌더링 되지 않는다
-투명한 배경을 설정하려면 background()대신 clear()사용, rendermode $2
+투명한 배경을 설정하려면 
+background()대신 clear()사용, rendermode $2
 
 * readfile
 상단의 readfile로 로컬 html파일을 선택할 수 있다.
