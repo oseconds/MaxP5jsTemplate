@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <script>
+    document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+
+    let v1 = 0;
+    let v2 = 0;
+    let v3 = 0;
+
+    window.max.bindInlet('set_value', function (_v1, _v2, _v3) {
+      v1 = _v1;
+      v2 = _v2;
+      v3 = _v3;
+    });
+
+    // Max API 함수를 비동기 방식으로 호출
+    const max = window.max;
+    async function MaxOut(outletName, ...dataList) {
+      await new Promise(resolve => {
+        // Combine the outletName and dataList into a single array
+        const message = [outletName, ...dataList];
+        max.outlet.apply(max, message); // Send the combined array as a message
+        resolve();
+      });
+    }
+
+
+  </script>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
