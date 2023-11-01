@@ -58,7 +58,7 @@ P5js 코드를 일일히 수정하는 대신 Max API 함수를 html단에서 비
     ```
 
 * __outlet__
-  * MaxOut('아웃렛 심볼', 값1, 값2)
+  * MaxOut('아웃렛 심볼', 값1, 값2);
   * 예시
   ```javascript
   MaxOut('Out1', mouseX, mouseY);
