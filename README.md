@@ -22,5 +22,5 @@ P5js 코드를 일일히 수정하는 대신 Max API 함수를 html단에서 비
 
 ## 템플릿 패치 설명
 
-https://github.com/0seconds-ago/MaxP5jsTemplate/assets/123317581/76a77602-7ece-4f2c-933a-a764798ea264
+![image](https://github.com/0seconds-ago/MaxP5jsTemplate/assets/123317581/76a77602-7ece-4f2c-933a-a764798ea264)
 
