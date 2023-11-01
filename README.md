@@ -1,6 +1,6 @@
 # MaxP5jsTemplate
 
-Max에서 jweb을 통해 P5js 코드를 별도의 변환없이 Max와 상호작용 할 수 있다
+Max에서 P5js 코드를 별도의 변환없이 사용하는 방법
 
 ## jweb 네임스페이스 문제
 
