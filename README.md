@@ -21,7 +21,7 @@ jweb 오브젝트는 크로스 플랫폼 CEF(Chromium Embedded Framework)를 사
 
 ## 솔루션
 
-P5js 코드를 일일히 수정하는 대신 Max API 함수를 html단에서 비동기방식으로 사용하면 된다
+P5js 코드를 일일이 수정하는 대신 Max API 함수를 html단에서 비동기방식으로 사용하면 된다
 
 **이 방식을 사용하면 sketch.js 파일을 그대로 Max에서 실행시키고 P5js라이브러리 문법을 사용해 수정 할 수 있다**
 
