@@ -8,6 +8,7 @@ jweb 객체는 크로스 플랫폼 CEF(Chromium Embedded Framework)를 사용하
 
 문제는 P5js 라이브러리 문법과 Max API 간의 네임스페이스 충돌때문에 통신 할 수 없어서
 이를 피하기 위해서는 P5js코드를 '인스턴스 모드' 로 변환해 사용해야한다
+
 (인스턴스 모드에 대한 자세한 설명은 https://github.com/processing/p5.js/wiki/Global-and-instance-mode 참고)
 
 
